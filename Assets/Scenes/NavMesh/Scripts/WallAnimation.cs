@@ -8,6 +8,7 @@ public class WallAnimation : MonoBehaviour
     public float strength = 2.5f;
 
     private float randomOffset;
+
     void Start()
     {
         randomOffset = Random.Range(-2.5f,2.5f);
