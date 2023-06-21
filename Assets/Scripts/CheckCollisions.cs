@@ -8,7 +8,7 @@ public class CheckCollisions : MonoBehaviour
     public int score;
     public TextMeshProUGUI CoinText;
 
-    // Added new codes
+    
     public PlayerController playerController;
     Vector3 PlayerStartPos;
     public GameObject speedBoosterIcon;
@@ -26,9 +26,9 @@ public class CheckCollisions : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
-            //Debug.Log("Coin collected!..");
+            
             AddCoin();
-            //Destroy(other.gameObject);
+            
             other.gameObject.SetActive(false);
         }
         else if (other.CompareTag("Finish"))
@@ -45,8 +45,7 @@ public class CheckCollisions : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            //Debug.Log("Touched Obstacle!..");
-            // Added new codes
+            
             transform.position = PlayerStartPos;
         }
     }

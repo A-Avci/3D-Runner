@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour
     public float xSpeed;
     public float limitx;
 
-    // Added new codes
+    
     public Animator PlayerAnim;
     public GameObject Player;
 
     void Start()
     {
-        // Added new codes
+        
         PlayerAnim = Player.GetComponentInChildren<Animator>();
     }
 
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         float touchXDelta = 0;
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
-            //Debug.Log(Input.GetTouch(0).deltaPosition.x / Screen.width);
+            
             touchXDelta = Input.GetTouch(0).deltaPosition.x / Screen.width;
         }
         else if (Input.GetMouseButton(0))

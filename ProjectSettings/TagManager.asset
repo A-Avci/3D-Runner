@@ -9,6 +9,8 @@ TagManager:
   - BumperObs
   - Undefined
   - Speedboost
+  - speedboost
+  - Runner
   layers:
   - Default
   - TransparentFX
